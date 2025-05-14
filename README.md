@@ -26,4 +26,4 @@ To run for a different platform, use the `--platform platform` flag. E.g.
 ```bash
 dx serve --platform desktop
 ```
-
+Learn more about dioxus: https://github.com/DioxusLabs/dioxus
