@@ -1,3 +1,3 @@
 
 
-pub static DOMAIN: &str = "https://technical-fast-api-production.up.railway.app";
+pub static DOMAIN: &str = "supposed to be my railway api address";
