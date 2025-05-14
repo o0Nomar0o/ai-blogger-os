@@ -1,0 +1,107 @@
+html,
+body {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.desktop {
+    width: 100vw;
+    height: 100vh;
+    background: #cbd5e1;
+    position: relative;
+    overflow: hidden;
+    inset: 0;
+
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-img {
+    width: 64px;
+    height: 64px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.icon-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+    text-align: center;
+}
+
+/*Window (App) Styling*/
+
+.window {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden; 
+}
+
+.window-header {
+    background: #e2e8f0;
+    padding: 0.5rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-weight: bold;
+    cursor: move;
+
+    flex-shrink: 0;
+
+}
+
+.window-body {
+
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100%; /* Necessary for the scroll area */
+
+}
+
+.resize-handle {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: nwse-resize;
+    z-index: 10;
+    background: transparent;
+
+}
+
+.resize-handle.top         { top: -5px; left: 0; right: 0; height: 10px; width: 100%; cursor: ns-resize; }
+.resize-handle.bottom      { bottom: -5px; left: 0; right: 0; height: 10px; width: 100%; cursor: ns-resize; }
+.resize-handle.left        { left: -5px; top: 0; bottom: 0; width: 10px; height: 100% ;cursor: ew-resize; }
+.resize-handle.right       { right: -5px; top: 0; bottom: 0; width: 10px; height: 100%; cursor: ew-resize; }
+
+.resize-handle.top-left     { top: -5px; left: -5px; cursor: nwse-resize; }
+.resize-handle.top-right    { top: -5px; right: -5px; cursor: nesw-resize; }
+.resize-handle.bottom-left  { bottom: -5px; left: -5px; cursor: nesw-resize; }
+.resize-handle.bottom-right { bottom: -5px; right: -5px; cursor: nwse-resize; }

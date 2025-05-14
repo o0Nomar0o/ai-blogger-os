@@ -1,0 +1,14 @@
+.markdown-div{
+    padding: 1rem;
+}
+.markdown-div, .markdown-div *{
+    -webkit-user-select: text !important;
+    /* Safari */
+    -ms-user-select: text !important;
+    /* IE 10 and IE 11 */
+    user-select: text !important;
+    /* Standard syntax */
+
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
